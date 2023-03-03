@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Yangi uz
+{% endblock %}
+
+
+{% block body %}
+
+<h1>Yangiliklar</h1>
+
+
+{% for i in news %}
+
+<h2>{{ i.title }}</h2>
+
+<p>{{ i.body }}</p>
+
+<i> {{ i.created_at }} </i>
+{% endfor %}
+
+{% endblock %}
