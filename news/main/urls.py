@@ -7,5 +7,5 @@ urlpatterns = [
     path('contact', contact, name='contact'),
     path('category', category, name='category'),
     path('search-result', search, name='search'),
-    path('single-post', singlepost, name='single')
+    path('single-post/<int:pk>', singlepost, name='singlepost')
 ]
